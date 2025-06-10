@@ -1,0 +1,36 @@
+{
+  "name": "json-to-excel-converter",
+  "version": "1.0.0",
+  "description": "A CLI tool to convert JSON files to CSV and Excel with insightful charts",
+  "type": "module",
+  "main": "main.mjs",
+  "bin": {
+    "json-to-excel": "./main.mjs"
+  },
+  "scripts": {
+    "start": "node main.mjs",
+    "test": "node main.mjs sample.json --verbose",
+    "install-deps": "npm install exceljs"
+  },
+  "keywords": [
+    "json",
+    "csv",
+    "excel",
+    "converter",
+    "cli",
+    "charts",
+    "data-analysis"
+  ],
+  "author": "JSON to Excel Converter CLI",
+  "license": "MIT",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/json-to-excel-converter.git"
+  }
+}
