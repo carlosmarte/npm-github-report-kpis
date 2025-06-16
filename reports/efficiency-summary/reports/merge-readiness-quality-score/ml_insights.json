@@ -1,0 +1,87 @@
+{
+  "analysis_timestamp": "2025-06-12T08:59:41.580417",
+  "data_summary": {
+    "total_metrics": 3,
+    "clusters_identified": 3,
+    "anomalies_detected": 0
+  },
+  "clustering_analysis": {
+    "cluster_labels": {
+      "0": "Fast Track",
+      "1": "Fast Track",
+      "2": "Needs Improvement"
+    },
+    "recommendations": [
+      {
+        "cluster": "Fast Track",
+        "action": "maintain_excellence",
+        "priority": "low",
+        "description": "Continue current practices that enable fast delivery"
+      },
+      {
+        "cluster": "Fast Track",
+        "action": "maintain_excellence",
+        "priority": "low",
+        "description": "Continue current practices that enable fast delivery"
+      }
+    ]
+  },
+  "trend_analysis": {
+    "weekly_analysis": {
+      "trend_direction": "no_data",
+      "seasonality": "unknown"
+    },
+    "monthly_analysis": {
+      "trend_direction": "no_data",
+      "seasonality": "unknown"
+    }
+  },
+  "anomaly_detection": [],
+  "predictions": {
+    "performance_category": {
+      "category": "good",
+      "recommendation": "minor_optimizations"
+    }
+  },
+  "performance_insights": [
+    {
+      "category": "quality",
+      "severity": "high",
+      "message": "Quality score of 7 is below acceptable standards",
+      "recommendation": "Implement stricter review processes and coding standards"
+    }
+  ],
+  "visualizations": [
+    "./reports/quality_radar.png"
+  ],
+  "statistical_summary": {
+    "avg_value": {
+      "mean": 2.3333333333333335,
+      "std": 4.041451884327381,
+      "min": 0.0,
+      "max": 7.0,
+      "skewness": 0.7071067811865472
+    },
+    "median_value": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "skewness": NaN
+    },
+    "p75_value": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "skewness": NaN
+    },
+    "p95_value": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "skewness": NaN
+    }
+  }
+}

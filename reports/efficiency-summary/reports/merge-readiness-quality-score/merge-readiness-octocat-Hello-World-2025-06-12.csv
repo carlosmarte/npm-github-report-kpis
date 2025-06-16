@@ -1,0 +1,9 @@
+type,metric,value,date_range
+summary,overview,"{""total_repositories"":1,""total_issues"":50,""total_pull_requests"":50,""linked_issue_pr_pairs"":0,""avg_lead_time_hours"":0,""median_lead_time_hours"":0,""merge_readiness_score"":72,""quality_score"":7,""bottlenecks_detected"":0}",2025-05-13 to 2025-06-12
+lead_time,total_pairs,0,2025-05-13 to 2025-06-12
+lead_time,avg_lead_time_hours,0,2025-05-13 to 2025-06-12
+lead_time,median_lead_time_hours,0,2025-05-13 to 2025-06-12
+lead_time,p75_lead_time_hours,0,2025-05-13 to 2025-06-12
+lead_time,p95_lead_time_hours,0,2025-05-13 to 2025-06-12
+lead_time,min_lead_time_hours,0,2025-05-13 to 2025-06-12
+lead_time,max_lead_time_hours,0,2025-05-13 to 2025-06-12

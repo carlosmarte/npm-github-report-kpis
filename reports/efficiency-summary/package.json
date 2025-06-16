@@ -1,0 +1,44 @@
+{
+  "name": "pr-lifecycle-analyzer",
+  "version": "1.0.0",
+  "description": "Comprehensive Pull Request Lifecycle Analysis Tool with ML insights and reporting",
+  "type": "module",
+  "main": "main.report.mjs",
+  "scripts": {
+    "start": "node main.report.mjs",
+    "report": "node main.report.mjs",
+    "ml": "python main.ml.py",
+    "ppt": "node main.ppt.mjs",
+    "excel": "python main.excel.py",
+    "analyze": "npm run report && npm run ml && npm run ppt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "pull-request",
+    "analytics",
+    "devops",
+    "reporting",
+    "machine-learning",
+    "cli"
+  ],
+  "author": "PR Lifecycle Analyzer",
+  "license": "MIT",
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "pr-lifecycle": "./main.report.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/pr-lifecycle-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/pr-lifecycle-analyzer/issues"
+  },
+  "homepage": "https://github.com/your-org/pr-lifecycle-analyzer#readme"
+}

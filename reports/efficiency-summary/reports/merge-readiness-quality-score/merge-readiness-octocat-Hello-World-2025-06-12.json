@@ -1,0 +1,74 @@
+{
+  "date_range": {
+    "start_date": "2025-05-13",
+    "end_date": "2025-06-12"
+  },
+  "summary": {
+    "total_repositories": 1,
+    "total_issues": 50,
+    "total_pull_requests": 50,
+    "linked_issue_pr_pairs": 0,
+    "avg_lead_time_hours": 0,
+    "median_lead_time_hours": 0,
+    "merge_readiness_score": 72,
+    "quality_score": 7,
+    "bottlenecks_detected": 0
+  },
+  "detailed_analysis": {
+    "lead_time_metrics": {
+      "total_pairs": 0,
+      "avg_lead_time_hours": 0,
+      "median_lead_time_hours": 0,
+      "p75_lead_time_hours": 0,
+      "p95_lead_time_hours": 0,
+      "min_lead_time_hours": 0,
+      "max_lead_time_hours": 0
+    },
+    "responsiveness_metrics": {
+      "contributor_count": 0,
+      "avg_response_time_hours": 0,
+      "median_response_time_hours": 0,
+      "p95_response_time_hours": 0,
+      "contributor_breakdown": []
+    },
+    "quality_metrics": {
+      "overall_score": 7,
+      "total_prs": 50,
+      "merged_prs": 0,
+      "reverted_prs": 0,
+      "merge_success_rate": 0,
+      "avg_comments_per_pr": 0,
+      "comment_to_loc_ratio": 0
+    },
+    "bottleneck_analysis": [],
+    "trends": {
+      "weekly": [],
+      "monthly": []
+    },
+    "repository_breakdown": [
+      {
+        "repository": "octocat/Hello-World",
+        "issues_count": 50,
+        "prs_count": 50,
+        "linked_pairs_count": 0,
+        "avg_lead_time_hours": 0,
+        "quality_score": 7
+      }
+    ]
+  },
+  "formulas": {
+    "lead_time": "FIRST_PR_OPENED_TIME - ISSUE_CREATED_TIME",
+    "responsiveness_score": "(100 - (AVG_RESPONSE_TIME / MAX_TIME * 100))",
+    "quality_score": "(REVIEW_DEPTH_SCORE + COMMENT_RATIO_SCORE + MERGE_SUCCESS_SCORE) / 3",
+    "review_depth_score": "REVIEW_COMMENTS / LINES_OF_CODE * 1000",
+    "comment_ratio_score": "TOTAL_COMMENTS / LINES_OF_CODE * 500",
+    "merge_success_score": "(MERGED_PRS - REVERTED_PRS) / MERGED_PRS * 100",
+    "merge_readiness_score": "(LEAD_TIME_SCORE + RESPONSIVENESS_SCORE + QUALITY_SCORE) / 3",
+    "median_calculation": "SORTED_VALUES[MIDDLE_INDEX]",
+    "percentile_calculation": "SORTED_VALUES[PERCENTILE_INDEX]",
+    "bottleneck_detection": "COUNT(ITEMS_WHERE_METRIC > THRESHOLD)",
+    "trend_analysis": "GROUP_BY_TIME_PERIOD(METRICS)",
+    "cycle_time": "MERGE_TIME - CREATION_TIME",
+    "idle_time": "TOTAL_TIME - ACTIVE_DEVELOPMENT_TIME"
+  }
+}
